@@ -143,19 +143,15 @@ Every demo build generates a `{slug}_demo_walkthrough.docx` file. **All walkthro
 
 ### Section 3 — Concierge Prompts (Tableau Next) / Demo Click Path (Pulse)
 
-**For Tableau Next builds (Concierge):**
-- **H1:** "Concierge Prompts"
-- Intro paragraph: "Each step below shows the question to ask followed by the expected Concierge response..."
+**Use the same labels for ALL builds — Pulse and Tableau Next:**
+- **H1:** "Concierge Prompts" (for Next) or "Demo Click Path" (for Pulse)
+- Intro paragraph: "Each step below shows the question to ask followed by the expected response..."
 - **H2** per step with a drill-down title (Opening, Drill 1 — Region, Reveal — Concentration, Root Cause, Counter-trend, Action, etc.)
 - Each step has:
-  - **"Ask:"** (bold) — the quoted question to ask Concierge
-  - **"Expected response:"** (bold) — the AI's answer text (captured live from the Insights API when available, or written from known data when API is unavailable)
+  - **"Ask:"** (bold) — the quoted question to ask Concierge, or the action to take in Pulse
+  - **"Expected response:"** (bold) — the AI's answer text, or what the sparkline/data reveals at this step
 
-**For Pulse-only builds (no Concierge):**
-- **H1:** "Demo Click Path"
-- Same H2-per-step structure, but with:
-  - **"Action:"** (bold) — what to click/filter in Pulse
-  - **"Audience sees:"** (bold) — what the sparkline/data reveals at this step
+**IMPORTANT:** Always use **"Ask:"** and **"Expected response:"** labels regardless of platform. Do NOT use "Action:" / "Audience sees:" — those labels were deprecated.
 
 **Prompt sequence pattern** (adapt to use case):
 1. Opening (surface-level metric view)

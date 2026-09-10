@@ -350,7 +350,18 @@ Choose one or more:
 - `next` — Tableau Next + Data Cloud
 - `crma` — CRM Analytics (Wave) dataset + dashboard
 - `csv` — CSV export only
-- `all` — all four
+- `all` — all of the above
+
+### 5a. Dashboard follow-up (only if output is `pulse`)
+
+When the user selects `pulse` as the output mode, immediately follow up:
+
+> "Would you like me to also create a Tableau Dashboard with charts and embedded Pulse metric tiles? (yes / no)"
+
+- If **yes**: include the Tableau Dashboard phase (Phase 5 in the Pulse build process) using `twb_builder.py`
+- If **no**: skip the dashboard phase entirely
+
+This question is asked during the input-gathering phase (before the build starts), not after the build completes.
 
 ### 5b. Brand colors (only ask if output includes `next` or `all`, and only for real companies)
 

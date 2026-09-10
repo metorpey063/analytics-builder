@@ -4,6 +4,14 @@ All notable changes to AIO Analytics Builder are documented here.
 
 ---
 
+## 2026-09-10 — Standardize walkthrough labels + Pulse dashboard prompt
+
+### Changed
+- **Walkthrough .docx format**: all builds (Pulse and Tableau Next) now use **"Ask:"** / **"Expected response:"** labels in Section 3. Deprecated "Action:" / "Audience sees:" labels for consistency across platforms.
+- **`/build-demo` skill**: when user selects `pulse` output mode, immediately ask whether to also create a Tableau Dashboard (Step 5a). Previously this was only asked post-build.
+
+---
+
 ## 2026-08-27 — Tableau Dashboard Builder (.twb workbook generation)
 
 ### Added
